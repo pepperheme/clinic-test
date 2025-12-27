@@ -4,108 +4,48 @@
   <meta charset="UTF-8">
   <title>Hematologia Clínica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Fonte moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
   <style>
-    :root {
-      --primary: #7b1e2b;
-      --bg: #f8f9fb;
-      --card: #ffffff;
-      --text: #1f2933;
-      --muted: #6b7280;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      font-family: "Inter", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+      padding: 0;
+      background: #ffffff;
+      color: #222;
     }
-
     main {
-      max-width: 900px;
-      margin: auto;
-      padding: 48px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-
     header {
       text-align: center;
-      margin-bottom: 48px;
+      margin-bottom: 40px;
     }
-
     header img {
       max-width: 260px;
       height: auto;
-      margin-bottom: 24px;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      font-weight: 600;
+    h1 {
+      margin-top: 20px;
+      font-size: 2.2em;
     }
-
-    header p {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      padding: 24px;
+    .cards a {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
       text-decoration: none;
       color: inherit;
-      border: 1px solid #e5e7eb;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    .cards a:hover {
+      background: #f7f7f7;
     }
-
-    .card span {
-      font-size: 1.8rem;
-    }
-
-    .card h3 {
-      margin: 12px 0 6px;
-      font-size: 1.15rem;
-      color: var(--primary);
-    }
-
-    .card p {
-      margin: 0;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
     footer {
-      margin-top: 64px;
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: #666;
       text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
     }
   </style>
 </head>
@@ -116,35 +56,24 @@
 <header>
   <img src="assets/logo.jpeg" alt="Mário Sousa Pimenta – Hematologia Clínica">
   <h1>Hematologia Clínica</h1>
-  <p>
-    Bem-vindo ao site da Hematologia Clínica de <strong>Mário Sousa Pimenta</strong>.
-  </p>
+  <p>Bem-vindo ao site da Hematologia Clínica de <strong>Mário Sousa Pimenta</strong>.</p>
 </header>
 
-<section>
-  <h2>O que procura?</h2>
+<section class="cards">
+  <a href="https://link-para-agendamento.com">
+    📅 <strong>Agendar Consulta</strong><br>
+    <small>Marcação de consultas de forma simples e segura</small>
+  </a>
 
-  <div class="cards">
+  <a href="publicacoes.md">
+    📰 <strong>Publicações</strong><br>
+    <small>Artigos, notícias e informação clínica</small>
+  </a>
 
-    <a class="card" href="https://link-para-agendamento.com">
-      <span>📅</span>
-      <h3>Agendar Consulta</h3>
-      <p>Marcação de consultas de forma simples e segura.</p>
-    </a>
-
-    <a class="card" href="publicacoes.md">
-      <span>📰</span>
-      <h3>Publicações</h3>
-      <p>Artigos, notícias e informação clínica.</p>
-    </a>
-
-    <a class="card" href="informacao-utentes/README.md">
-      <span>📘</span>
-      <h3>Informação a Utentes</h3>
-      <p>Direitos, deveres e informação relevante.</p>
-    </a>
-
-  </div>
+  <a href="informacao-utentes/README.md">
+    📘 <strong>Informação a Utentes</strong><br>
+    <small>Direitos, deveres e informação relevante</small>
+  </a>
 </section>
 
 <footer>
